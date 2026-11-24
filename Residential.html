@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb"><meta name="description" content="거주지역과 직전 학기 성적을 바탕으로 기숙사 점수 환산을 준비합니다">
+  <title>Residential · ERICA 학점계산기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html" aria-label="ERICA 학점계산기 홈"><img class="brand-logo" src="erica-logo.png" alt="한양대학교 ERICA"><span class="brand-caption">학점계산기</span></a><nav class="main-nav" aria-label="주요 메뉴"><a href="index.html">Home</a><a class="active" href="Residential.html" aria-current="page">Residential</a><a href="Contact.html">Contact</a></nav></header>
+  <main class="page-shell">
+    <section class="page-hero section-shell reveal"><div class="eyebrow"><span class="eyebrow-dot"></span> RESIDENTIAL SCORE</div><h1>기숙사 점수,<br><span class="title-accent">미리 계산해요.</span></h1><p>거주지역과 Home에서 계산한 전체·전공 이수 학점을 바탕으로 다음 학기 기숙사 점수를 확인합니다.</p></section>
+    <section class="section-shell residential-layout">
+      <div class="panel residential-form-panel reveal"><div class="panel-heading"><div><span class="panel-kicker">YOUR RESIDENTIAL INFO</span><h2>기숙사 점수 정보</h2></div><span class="panel-icon">⌂</span></div><p class="panel-description">거주지역을 입력하면 Home에서 계산한 전체·전공 이수 학점과 함께 점수 환산에 반영합니다. 입력값은 이 브라우저에 저장됩니다.</p>
+        <form id="residence-form" class="course-form"><label>본인의 거주지역<input id="residence-area" name="area" type="text" maxlength="80" placeholder="예: 경기도 안산시" required></label><button class="button button-primary submit-button" type="submit">정보 저장 및 확인 <span>→</span></button></form>
+      </div>
+      <aside class="panel residence-result reveal"><span class="panel-kicker">SCORE PREVIEW</span><h2>나의 기숙사 점수</h2><div class="residence-chip" id="residence-result-area">거주지역을 입력해 주세요</div><div class="residence-metric"><span>전체 이수 학점</span><strong><b id="residence-total">0</b><small> 학점</small></strong></div><div class="residence-metric"><span>전공 이수 학점</span><strong><b id="residence-major">0</b><small> 학점</small></strong></div><div class="dorm-score"><span>환산 점수</span><strong id="dorm-score">산식 적용 대기 중</strong><p id="dorm-message">점수 환산방식이 정해지면 계산 결과를 표시할게요.</p></div><a class="inline-link" href="index.html">Home에서 이수 과목 입력 <span>↗</span></a></aside>
+    </section>
+    <p class="section-shell data-note">현재는 거주지역과 Home의 전체·전공 이수 학점을 연결해 보여줍니다. 공식 기숙사 점수 환산방식은 추후 적용 예정입니다.</p>
+  </main>
+  <footer class="site-footer section-shell"><span>한양대학교 ERICA 학점계산기 팀 프로젝트</span><span>© 2026 ERICA CREDIT</span></footer>
+</body>
+</html>
