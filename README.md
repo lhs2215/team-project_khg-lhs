@@ -1,1 +1,0 @@
-# team-project_khg-lhs
